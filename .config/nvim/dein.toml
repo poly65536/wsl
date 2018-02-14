@@ -1,0 +1,44 @@
+# dein.vim
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# denite
+# [[plugins]]
+# repo = 'Shougo/denite.nvim'
+
+# colorscheme
+[[plugins]]
+repo = 'tomasr/molokai'
+
+#  [[plugins]]
+#  repo = 'sickill/vim-monokai'
+#
+#  [[plugins]]
+#  repo = 'w0ng/vim-hybrid'
+#
+#  [[plugins]]
+#  repo = 'jacoborus/tender.vim'
+#
+#  [[plugins]]
+#  repo = 'altercation/vim-colors-solarized'
+#
+#  [[plugins]]
+#  repo = 'AlessandroYorba/Alduin'
+#
+#  [[plugins]]
+#  repo = 'raphamorim/lucario'
+
+# tree view
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# lightline
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+# snippets
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'w0rp/ale'

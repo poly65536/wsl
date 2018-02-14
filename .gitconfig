@@ -1,3 +1,13 @@
+# This is Git's per-user configuration file.
+# Please adapt and uncomment the following lines:
+#	name = ""
+#	email = Poly@PC-H_H.localdomain
+
+[alias]
+	glog = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
+ 	graph =	log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [user]
-	email = 0122Haruo@gmail.com
 	name = Poly
+	email = 0122Haruo@gmail.com
+[crediential]
+	helper = cache --timeout=1800
