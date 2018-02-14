@@ -1,0 +1,96 @@
+# git
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+on_path = '.*'
+
+# determine filetype by context
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+on_path = '.*'
+
+# neosnippet
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+hook_source = '''
+  "imap <C-k> <Plug>(neosnippet_expand_or_jump)
+  "smap <C-k> <Plug>(neosnippet_expand_or_jump)
+  "xmap <C-k> <Plug>(neosnippet_expand_target)
+  if has('conceal')
+    set conceallevel=2 concealcursor=niv
+  endif
+'''
+on_i  = 1
+on_ft = ['snippet']
+depends = ['neosnippet-snippets']
+
+# deoplete
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertCharPre'
+hook_source = '''
+  let g:deoplete#enable_at_startup = 1
+
+  inoremap <expr><tab> pumvisible() ? "\<C-n>" :
+        \ neosnippet#expandable_or_jumpable() ?
+        \    "\<Plug>(neosnippet_expand_or_jump)" : "\<tab>"
+'''
+on_i = 1
+
+[[plugins]]
+repo = 'eagletmt/neco-ghc'
+on_ft = ['haskell']
+hook_source = '''
+  let g:haskell_conceal = 0
+'''
+
+[[plugins]]
+repo = 'dag/vim2hs'
+on_ft = ['haskell']
+
+#[[plugins]]
+#repo = 'neovimhaskell/haskell-vim'
+#on_ft = ['haskell']
+#hook_source = '''
+#  let g:haskell_enable_quantification = 1
+#  let g:haskell_enable_arrowsyntax = 1
+#  let g:haskell_enable_pattern_synonyms = 1
+#  let g:haskell_enable_typeroles = 1
+#  let g:haskell_classic_highlighting = 1
+#'''
+
+## deoplete js with flow
+#[[plugins]]
+#repo = 'wokalski/autocomplete-flow'
+#on_i = 1
+#depends = ['deoplete']
+
+# ale
+#[[plugins]]
+#repo = 'w0rp/ale'
+#on_path = '.*'
+#hook_add = '''
+#  let g:ale_linters = {
+#  \  'javascript': ['eslint'],
+#  \}
+#  let g:ale_fixers = {
+#  \  'javascript': ['eslint'],
+#  \}
+#  let g:ale_fix_on_save = 1
+#  let g:ale_sign_column_always = 1
+#  let g:lightline = {
+#    \'active': {
+#    \  'left': [
+#    \    ['mode', 'paste'],
+#    \    ['readonly', 'filename', 'modified', 'ale'],
+#    \  ]
+#    \},
+#    \'component_function': {
+#    \  'ale': 'ALEGetStatusLine'
+#    \}
+#  \}
+#'''
+
+## deoplete js
+#[[plugins]]
+#repo = 'carlitux/deoplete-ternjs'
+#on_i = 1
