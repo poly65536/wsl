@@ -13,5 +13,3 @@
 	helper = cache --timeout=1800
 [core]
 	editor = vim
-[push]
-	default = upstream
