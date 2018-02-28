@@ -11,3 +11,7 @@
 	email = 0122Haruo@gmail.com
 [crediential]
 	helper = cache --timeout=1800
+[core]
+	editor = vim
+[push]
+	default = upstream

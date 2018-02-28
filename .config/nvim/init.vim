@@ -89,6 +89,9 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 
+" マウス有効化
+set mouse=a
+
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
@@ -162,8 +165,6 @@ let g:ale_fixers = {
 \  'javascript': ['eslint'],
 \  'haskell': ['hlint']
 \}
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
 let g:ale_statusline_format = ['ERROR:%d', 'WARNING:%d', 'OK']
 let g:ale_echo_msg_error_str = 'ERROR'
 let g:ale_echo_msg_warning_str = 'WORNING'
