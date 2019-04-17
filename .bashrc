@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 export PGHOST=localhost
+
+export DOCKER_HOST='tcp://0.0.0.0:2375'
