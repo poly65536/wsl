@@ -115,7 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export PGHOST=localhost
-
-export DOCKER_HOST='tcp://0.0.0.0:2375'
